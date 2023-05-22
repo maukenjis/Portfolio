@@ -1,0 +1,124 @@
+<!-- PORTFOLIO PROJECTS PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Project: Portfolio "making of" </title>
+	<link rel="icon" type=image/png href="media/Pikachu.png">
+	<!-- Bootstrap code via Content Delivery Network (CDN) -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<!-- Handmade stylesheets -->
+	<link rel="stylesheet" href="css/css_main_portf.css">
+	<link rel="stylesheet" href="css/css_mq_portf.css">
+</head>
+<body>
+	<header class='container'>
+		<!-- Navbar -->
+		<nav class='navbar navbar-expand-md' style='background-color:transparent'>
+			<div class='container-fluid'>
+			<!-- Brand -->
+				<h1 class='navbar-brand'>Maurício's portfolio</h1>
+			<!-- Trigger button -->
+				<button class='navbar-toggler' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-label='Toggle navigation'>
+					<span class='navbar-toggler-icon'></span>
+				</button>
+			<!-- Offcanvas Navbar -->
+				<div class='offcanvas offcanvas-end tabindex=-1' id='offcanvasNavbar' aria-labelledby='offcanvasNavbarLabel'>
+					<!-- Offcanvas header -->
+					<div class='offcanvas-header'>
+						<h5 class='offcanvas-title' id='offcanvasNavbarLabel'>Navigation menu</h5>
+						<button type='button' class="btn-close" data-bs-dismiss='offcanvas' aria-label="Close"></button>
+					</div>
+					<!-- Offcanvas body -->
+					<div class='offcanvas-body'>
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class='nav-item'>
+								<a class="nav-link" href="index_portf.html" target='_self'>About</a>
+							</li>
+							<li class='nav-item'>
+								<a class="nav-link current" href="portal_portf.html" target="_self">Projects</a>
+							</li>
+							<li class='nav-item'>
+								<a class="nav-link" href="contact_portf.html" target="_self">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class='container'>
+		<div class='row align-items-center'>
+			<article class='col-md-9'>
+			<h1>Portfolio "making of"</h1>
+			<p>Here I'll be commenting on some of the features I've learned to use and added to these pages.<br>
+			As I've mentioned before, I used Bootstrap framework to make these pages responsive. So much information was found in the Bootstrap's Documentation. If you're interested, make sure to check it out:</p>
+			<a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" id='getBoots'>Get Bootstrap 5.3 Documentation</a>
+			</article>
+			<aside class='col-md-3'>Do notice that some features won't work if you forget to include CDN links.</aside>
+		</div>
+		<section>
+			<h2>Navigation: navbar & offcanvas</h2>
+			<p>My favorite feature is the <strong>"navbar"</strong>. It includes your logo ("brand"), a responsive trigger button and a navigation menu.<br>Also, this isn't just a regular navbar: I've included something called <strong>"offcanvas"</strong>. The navigation menu, when called by the trigger button, will be displayed in a "upper layer", and I think that's really neat.</p>
+			<figure>
+				<img src="media/navbar_portf_expand.jpg" alt="Navbar in PC view" class='img-fluid mx-auto d-block'>
+				<figcaption>Image 1: navbar with navigation menu expanded in larger viewports.</figcaption>
+				<img src="media/navbar_portf_small.jpg" alt="Navbar in mobile view" class='img-fluid mx-auto d-block'>
+				<figcaption>Image 2: navbar with navigation menu under trigger button in smaller viewports.</figcaption>
+				<img src="media/navbar_offcanvas.jpg" alt="Offcanvas over the page" class='img-fluid mx-auto d-block'>
+				<figcaption>Image 3: see the offcanvas over the page, revealing the navigation menu.</figcaption>
+			</figure>
+			<p>To implement this you'll need many lines of code, and that may be a little scary, but if you divide it in smaller blocks, it becomes easier to understand. The navbar with offcanvas code will be basically:</p>
+			<ol style='list-style-type: upper-roman;'>
+				<li>The navbar itself;
+					<ol>
+						<li>brand;</li>
+						<li>button;</li>
+						<li>offcanvas;
+							<ol style='list-style-type: upper-alpha;'>
+								<li>offcanvas header w/ closing button;</li>
+								<li>offcanvas body w/ the links.</li>
+							</ol>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</section>
+		<section>
+			<h2>Portal: carousel & cards</h2>
+			<p>Another really cool feature is the <strong>"carousel"</strong>. It goes cycling through certain items, such as images; in these pages, I've used <strong>"cards"</strong>.</p>
+			<figure>
+				<img src='media/carousel_card.jpg' alt='One of the cards in carousel' class='img-fluid mx-auto d-block'>
+				<figcaption>Image 4: notice the carousel elements (buttons to navigate through content, on the sides and bottom) and the card contents (image, text and link in button).</figcaption>
+			</figure>
+			<p>This is another combination, provided by the Bootstrap framework, that may require a bunch of lines of code, but isn't really that hard. It is basically:</p>
+			<ol style='list-style-type: upper-roman;'>
+				<li>Carousel itself</li>
+					<ol>
+						<li>Carousel contents</li>
+						<ol style='list-style-type: upper-alpha;'>
+							<li>Card itself</li>
+								<ol style='list-style-type: lower-alpha;'>
+									<li>Card image</li>
+									<li>Card text</li>
+									<li>Button w/ link</li>
+								</ol>
+						</ol>
+						<li>Carousel controls</li>
+					</ol>
+				
+			</ol>
+		</section>
+	</main>
+	<footer>
+		<img src="media/Kanna_eats3.gif" alt="Easter egg goes here." class="easterEgg rounded">
+		<p>Last updated: May, 2023</p>
+	</footer>
+	<!-- Bootstrap code via Content Delivery Network (CDN) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	<!-- Handmade scripts -->
+	<script type="text/javascript" src="js/JS_main_portf.js"></script>
+	<script type="text/javascript">console.log('So, you %cdid '+'%ccheck the console!','font-style:oblique','font-style:normal');</script>
+</body>
+</html>
