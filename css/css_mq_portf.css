@@ -1,0 +1,8 @@
+/* Portfolio media queries CSS */
+
+/* For printing */
+@media print{
+	nav{
+		display:none
+	}
+}

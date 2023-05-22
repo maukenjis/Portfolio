@@ -1,0 +1,99 @@
+/* Portfolio main CSS */
+
+/* General */
+body{
+	background-color:#FFFFFF;
+}
+header, main, footer{
+	margin:1em;
+	border:none;
+}
+footer{
+	text-align:center;
+}
+
+
+/* Navbar */
+.navbar-brand{
+	font-family: "Lucida Console", Arial;
+	font-size:1.8rem;
+	font-style:oblique;
+	font-variant:small-caps;
+	color:#213A95;
+}
+.current{
+	text-decoration:underline;
+	color:#5610B3;
+	font-weight:bold;
+}
+.nav-item{
+	margin:0 auto;
+}
+
+
+/* Hyperlinks  */
+a{
+	color:#150558e0;
+	font-weight:bold;
+}
+a:hover, a:focus{
+	color:#1b5587e0;
+}
+.nav-link{
+	margin:0px 5px;
+}
+
+
+/* Content */
+section{
+	margin-bottom:1em;
+	border:double 7px #000000;
+	padding:0em 2em;
+}
+main h1{
+	
+}
+main p{
+	text-align:left;
+}
+figure{
+	margin:1.5em 2em;
+	text-align:center;
+}
+figure img{
+	border:solid 2px #030120;
+}
+aside{
+	background-color:#8FC1C9;
+	margin-bottom: 1em;
+	border: solid 2px;
+	border-radius:7px;
+	height:100%;
+}
+article{
+	margin-bottom:1em;
+}
+ol{
+	text-align:justify;
+	border:dashed 2px #4d6ccdd6;
+	margin-bottom:1rem;
+	margin-right:.5em;
+}
+.card{
+	background-color: lightsteelblue;
+}
+.card img{
+	width:100%;
+	margin:0 auto;
+}
+.card-body a{
+	margin-bottom: 2rem;
+}
+.card-body{
+	margin:0px 1rem;
+}
+
+.easterEgg{
+	display:none;
+	max-width:15rem;
+}
