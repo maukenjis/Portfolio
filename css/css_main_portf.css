@@ -8,6 +8,9 @@ header, main, footer{
 	margin:1em;
 	border:none;
 }
+main{
+	height:100vh;
+}
 footer{
 	text-align:center;
 }
@@ -91,6 +94,15 @@ ol{
 }
 .card-body{
 	margin:0px 1rem;
+}
+
+.bi, .fa-brands{
+	font-size:3rem;
+	margin-right:15px;
+}
+.contact{
+	margin:1rem 0px;
+	text-align:center;
 }
 
 .easterEgg{
