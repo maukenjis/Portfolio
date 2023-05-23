@@ -3,16 +3,17 @@
 /* General */
 body{
 	background-color:#FFFFFF;
+	display:flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 header, main, footer{
 	margin:1em;
 	border:none;
 }
-main{
-	height:100vh;
-}
 footer{
 	text-align:center;
+	background-color: lightcoral;
 }
 
 
@@ -104,6 +105,7 @@ ol{
 	margin:1rem 0px;
 	text-align:center;
 }
+
 
 .easterEgg{
 	display:none;
